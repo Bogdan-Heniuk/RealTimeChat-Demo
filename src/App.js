@@ -1,29 +1,24 @@
 import Navbar from "./components/navbar";
 import './css/App.css'
-import InputField from "./components/inputField";
 import React from "react";
-import Messages from "./components/messages";
 import Register from "./components/register";
+import {BrowserRouter as Router , Route, Switch} from "react-router-dom";
+import ChatContent from "./components/chatContent";
 
-function App() {
+const App = () => {
 
     return (
-        // <div className="app">
-        //     <div className="navbar">
-        //         <Navbar/>
-        //     </div>
-        //     <div className="row content">
-        //         <div className="col s12">
-        //             <Messages/>
-        //         </div>
-        //     </div>
-        //         <div className="row input">
-        //             <div className="col s12">
-        //                 <InputField/>
-        //             </div>
-        //         </div>
-        //     </div>
-        <Register/>
+        <Router>
+            <div className="app">
+                <div className="navbar">
+                    <Navbar/>
+                </div>
+                <Switch>
+                    <Route path='/' exact component={ChatContent}/>
+                    <Route path='/register' exact component={Register}/>
+                </Switch>
+            </div>
+        </Router>
     )
 }
 

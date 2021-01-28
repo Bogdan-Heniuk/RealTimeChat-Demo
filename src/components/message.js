@@ -1,17 +1,16 @@
 import React from "react";
-
+import {auth} from "./config";
 
 const Message = (data) => {
-    const my_id = 2;
     return (
         <div style={{
-            justifyContent: my_id === data.data.user_id ? 'flex-end' : 'flex-start'
+            flexDirection : auth.currentUser.uid === data.data.user_id ? 'row-reverse' : 'row',
         }} className='message flex'>
             <div className="name">
-                {data.data.name.slice(0,2)}
+                lo
             </div>
             <div className="text">
-                {data.data.text}
+                {data.data.title}
             </div>
         </div>
     )

@@ -7,8 +7,14 @@ class Messages{
 
     messages = []
 
+    getMessages(){
+        return this.messages
+    }
+
     addMessage(message) {
         this.messages.push(message)
     }
 
 }
+
+export default new Messages()

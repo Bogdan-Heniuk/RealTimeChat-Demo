@@ -1,12 +1,9 @@
 import React from "react";
 import {firebaseConfig} from './config'
 import firebase from 'firebase';
+import {auth} from "./config";
 
 const Register = () => {
-    if (!firebase.apps.length) {
-        firebase.initializeApp(firebaseConfig);
-    }
-    const auth = firebase.auth()
 
     const SignInWithGoogle = async () => {
             const googleProvider = new firebase.auth.GoogleAuthProvider()
@@ -16,6 +13,7 @@ const Register = () => {
     const submitHandler = async (event) => {
         event.preventDefault()
         await SignInWithGoogle()
+        window.location = '/';
     }
 
     return (
