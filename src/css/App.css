@@ -9,6 +9,14 @@ body{
     overflow: auto;
 }
 
+.sign-out{
+    cursor: pointer;
+    margin-right: 20px;
+    position: absolute;
+    right: 10px;
+    top: 5px;
+}
+
 .flex{
     display: flex;
     align-items: center;
@@ -17,6 +25,10 @@ body{
 .message{
     column-gap: 30px;
     margin-bottom: 10px;
+}
+
+.nav-wrapper{
+    position: relative;
 }
 
 .avatar{

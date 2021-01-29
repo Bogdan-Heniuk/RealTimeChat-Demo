@@ -10,6 +10,10 @@ class User {
 
     isInitialized = false
 
+    signOut = () => {
+        return firebase.auth().signOut()
+    }
+
     subscribeToAuthStateChanged = () => {
         firebase.auth().onAuthStateChanged((user) => {
             this.user = user
