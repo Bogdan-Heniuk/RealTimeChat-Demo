@@ -5,8 +5,8 @@ import {auth} from "../../config";
 const Register = () => {
 
     const SignInWithGoogle = async () => {
-            const googleProvider = new firebase.auth.GoogleAuthProvider()
-            await auth.signInWithPopup(googleProvider)
+        const googleProvider = new firebase.auth.GoogleAuthProvider()
+        await auth.signInWithPopup(googleProvider)
     }
 
     const submitHandler = async (event) => {
@@ -15,9 +15,15 @@ const Register = () => {
     }
 
     return (
-            <div className="row register">
-                    <a onClick={submitHandler} className="waves-effect waves-light btn">Sign in with Google</a>
+        <div className='row register'>
+            <div onClick={submitHandler} className="google-btn">
+                <div className="google-icon-wrapper">
+                    <img className="google-icon"
+                         src="https://upload.wikimedia.org/wikipedia/commons/5/53/Google_%22G%22_Logo.svg"/>
+                </div>
+                <p className="btn-text"><b>Sign in with google</b></p>
             </div>
+        </div>
     )
 }
 
