@@ -1,7 +1,6 @@
 import React from "react";
-import {firebaseConfig} from './config'
 import firebase from 'firebase';
-import {auth} from "./config";
+import {auth} from "../../config";
 
 const Register = () => {
 
@@ -13,7 +12,6 @@ const Register = () => {
     const submitHandler = async (event) => {
         event.preventDefault()
         await SignInWithGoogle()
-        window.location = '/';
     }
 
     return (

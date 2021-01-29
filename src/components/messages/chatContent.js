@@ -1,7 +1,7 @@
 import React, {useEffect} from "react";
 import Messages from "./messages";
 import InputField from "./inputField";
-import messagesStore from '../store/messages'
+import messagesStore from '../../store/messages'
 
 const ChatContent = () => {
     useEffect(() => {

@@ -1,8 +1,8 @@
 import React from "react";
 import Message from "./message";
-import messageStore from "../store/messages";
+import messageStore from "../../store/messages";
 import {observer} from "mobx-react-lite";
-import AlwaysScrollToBottom from "./scroll";
+import AlwaysScrollToBottom from "../common/scroll";
 
 const Messages = observer(() => {
     return (

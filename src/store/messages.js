@@ -1,5 +1,5 @@
 import {makeAutoObservable} from "mobx";
-import firebase from "../components/config";
+import firebase from "../config";
 
 class Messages {
     constructor() {
@@ -9,7 +9,7 @@ class Messages {
     messages = []
 
     onMessage = (snapshot) => {
-        this.messages = Object.values(snapshot.val())
+        this.messages = Object.values(snapshot.val() || {})
 
     }
 
@@ -19,11 +19,7 @@ class Messages {
     }
 
     async addMessage(message) {
-        await firebase.database().ref('messages').push({
-            id: message.id,
-            user_id: message.user_id,
-            title: message.title
-        })
+        await firebase.database().ref('messages').push(message)
     }
 
 }
