@@ -2,14 +2,14 @@ import React from "react";
 import message from "../store/messages";
 import useInputValue from "../hooks/use-input-value";
 import {auth} from "./config";
-import {observer} from "mobx-react-lite";
 
 const InputField = () => {
 
     const input = useInputValue()
-    const submitHandler = (event) =>{
+
+    const submitHandler = async (event) =>{
         event.preventDefault()
-        message.addMessage({
+        await message.addMessage({
             user_id : auth.currentUser.uid,
             id: Date.now(),
             title: input.value()
