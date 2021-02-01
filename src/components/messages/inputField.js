@@ -20,7 +20,7 @@ const InputField = observer(() => {
     }
     return (
             <div className="input-field flex">
-                <input {...input.bind} className="validate" />
+                <textarea {...input.bind} placeholder='сообщение...' className="validate" />
                 <div className="send-button">
                     <button disabled={disabled} onClick={submitHandler} className="btn-floating btn-large red">
                         <i style={{marginLeft: '2.5px'}} className="large material-icons">send</i>
