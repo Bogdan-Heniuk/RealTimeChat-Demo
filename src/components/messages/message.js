@@ -11,7 +11,9 @@ const Message = observer ((props) => {
             <div >
                 <img referrerPolicy="no-referrer" className="avatar" src={props.data.avatar} alt=""/>
             </div>
-            <div className="text">
+            <div className="text" style={{
+                backgroundColor: userStore.user.uid === props.data.user_id ? '#dbb6d9' : '#a7d4ea',
+            }}>
                 {props.data.title}
             </div>
         </div>

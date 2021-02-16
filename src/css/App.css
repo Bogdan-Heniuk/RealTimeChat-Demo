@@ -1,11 +1,10 @@
 body{
-    overflow: hidden;
     display: grid;
     grid-template-rows: 1fr auto;
 }
 .content{
     margin-top: 20px;
-    height: calc(100vh - 200px);
+    height: calc(100vh - 220px);
     overflow: auto;
 }
 
@@ -23,13 +22,14 @@ body{
 }
 
 .message{
-    column-gap: 30px;
+    column-gap: 10px;
     margin-bottom: 10px;
 }
 
-.nav-wrapper{
-    position: relative;
+textarea{
+    resize: none;
 }
+
 
 .avatar{
     width: 30px;
@@ -42,8 +42,7 @@ body{
     text-overflow: ellipsis;
     word-wrap: break-word;
     overflow: hidden;
-    width: 200px;
-    background-color: #e7dede;
+    width: 150px;
     padding: 5px 10px;
     border-radius: 5%;
 }
