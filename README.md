@@ -6,11 +6,11 @@
 https://chat-e1d30.web.app/
 
 ## Tecnology stack
-• HTML
-• CSS
-• JS
-• React
-• MobX
-• Google Firebase (db and hosting)
+• HTML  
+• CSS  
+• JS  
+• React  
+• MobX  
+• Google Firebase (db and hosting)  
 
 
