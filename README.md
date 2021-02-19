@@ -7,10 +7,13 @@ https://chat-e1d30.web.app/
 
 ## Tecnology stack
 • HTML 5    
-• CSS 3  
+• CSS 3 (Materialize) 
 • JS  
 • React  
 • MobX  
 • Firebase Database & Firebase Hosting 
 
-
+## Install
+npm install
+## Usage
+npm start
