@@ -11,6 +11,6 @@ https://chat-e1d30.web.app/
 • JS  
 • React  
 • MobX  
-• Google Firebase (db and hosting)  
+• Firebase Database & Firebase Hosting 
 
 
