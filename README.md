@@ -6,8 +6,8 @@
 https://chat-e1d30.web.app/
 
 ## Tecnology stack
-• HTML  
-• CSS  
+• HTML 5    
+• CSS 3  
 • JS  
 • React  
 • MobX  
